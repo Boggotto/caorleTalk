@@ -29,6 +29,7 @@
     transform: scale(1.2) rotate(10deg);
     background-color: #fa725a;
     color: white;
+    cursor: pointer;
 }
 
 .buttonRight {
@@ -43,9 +44,10 @@
 }
 
 .buttonRight:hover {
-    transform: scale(1.2) rotate(10deg);
+    transform: scale(1.2) rotate(-10deg);
     background-color: #fa725a;
     color: white;
+    cursor: pointer;
 }
 
 a {
