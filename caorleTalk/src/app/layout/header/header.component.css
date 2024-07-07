@@ -1,5 +1,5 @@
 #header {
-    height: 15%;
+    height: 9.0vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +55,7 @@ a {
 }
 
 p {
-    font-size: 19px;
+    font-size: 1.0vw;
     color: #f1f1f1;
     text-align: right;
     margin-left: 0px;
