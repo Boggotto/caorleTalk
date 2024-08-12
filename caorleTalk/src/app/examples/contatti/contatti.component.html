@@ -1,0 +1,116 @@
+<div class="wrapper">
+    <div class="page-header page-header-small">
+        <div class="page-header-image rellax-header" data-rellax-speed="-8"
+            style="background-image: url('assets/img/bg6.jpg');">
+        </div>
+        <div class="container">
+            <div class="content-center">
+                <h1 class="title">Caorle Talk</h1>
+                <a href="https://www.instagram.com/caorletalk/" class="btn btn-primary btn-icon btn-round" style="width: 45px;height: 45px;" target="_blank">
+                    <i class="fab fa-instagram" style="font-size: 24px;"></i>
+                </a>
+                <a href="https://www.youtube.com/@CaorleTalk" class="btn btn-primary btn-icon btn-round" style="width: 45px;height: 45px;" target="_blank">
+                    <i class="fab fa-youtube" style="font-size: 22px;"></i>
+                </a>
+                <a href="https://open.spotify.com/show/44buMRFer9wa6tPbsntGzE?si=eac5329e26e14c06" class="btn btn-primary btn-icon btn-round" style="width: 45px;height: 45px;" target="_blank">
+                    <i class="fab fa-spotify" style="font-size: 24px;"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61561617857205" class="btn btn-primary btn-icon btn-round" style="width: 45px;height: 45px;" target="_blank">
+                    <i class="fab fa-facebook-square" style="font-size: 24px;"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section section-contact-us text-center">
+        <div class="container">
+            <h2 class="title">Vuoi proporti per un Podcast?</h2>
+            <p class="description">Compila il form qui sotto.</p>
+            <div class="row">
+                <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
+                    <div class="input-group input-lg" [ngClass]="{'input-group-focus':focus===true}">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="now-ui-icons users_circle-08"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Nome" (focus)="focus=true"
+                            (blur)="focus=false">
+                    </div>
+                    <div class="input-group input-lg" [ngClass]="{'input-group-focus':focus1===true}">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="now-ui-icons ui-1_email-85"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Email" (focus)="focus1=true"
+                            (blur)="focus1=false">
+                    </div>
+                    <div class="textarea-container">
+                        <textarea class="form-control" name="name" rows="4" cols="80"
+                            placeholder="Messaggio..."></textarea>
+                    </div>
+                    <div class="send-button">
+                        <a href="#" class="btn btn-primary btn-round btn-block btn-lg">Invia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer footer-default" style="padding-bottom: 12px;">
+        <div class="container">
+            <nav style="margin-top: 6px;">
+                <ul>
+                    <li>
+                        <a href="">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chi-siamo" routerLink="chi-siamo">
+                            Chi Siamo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contatti" routerLink="contatti">
+                            Contatti
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                <ul>
+                    <li class="nav-item">
+                      <a class="nav-link" rel="tooltip" title="Seguici su Instagram" data-placement="bottom" href="https://www.instagram.com/caorletalk/" 
+                        style="width: 45px;height: 45px;" target="_blank">
+                        <i class="fab fa-instagram" style="font-size: 20px;"></i>
+                        <p class="d-lg-none d-xl-none">Instagram</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" rel="tooltip" title="Seguici su Youtube" data-placement="bottom" href="https://www.youtube.com/@CaorleTalk" 
+                        style="width: 45px;height: 45px;" target="_blank">
+                        <i class="fab fa-youtube" style="font-size: 20px;"></i>
+                        <p class="d-lg-none d-xl-none">Youtube</p>
+                      </a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Seguici su Spotify" data-placement="bottom" href="https://open.spotify.com/show/44buMRFer9wa6tPbsntGzE?si=eac5329e26e14c06" 
+                            style="width: 45px;height: 45px;" target="_blank">
+                          <i class="fab fa-spotify" style="font-size: 20px;"></i>
+                          <p class="d-lg-none d-xl-none">Spotify</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Seguici su Facebook" data-placement="bottom" href="https://www.facebook.com/profile.php?id=61561617857205"
+                            style="width: 45px;height: 45px;" target="_blank">
+                          <i class="fab fa-facebook-square" style="font-size: 20px;"></i>
+                          <p class="d-lg-none d-xl-none">Facebook</p>
+                        </a>
+                      </li>
+                  </ul>
+            </div>
+        </div>
+    </footer>
+</div>
