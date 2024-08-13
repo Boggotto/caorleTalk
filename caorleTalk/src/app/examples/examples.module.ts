@@ -12,6 +12,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ExamplesComponent } from './examples.component';
 import { ChisiamoComponent } from './chisiamo/chisiamo.component';
 import { ContattiComponent } from './contatti/contatti.component';
+import { PodcastComponent } from './podcast/podcast.component';
 
 @NgModule({
     imports: [
@@ -30,7 +31,8 @@ import { ContattiComponent } from './contatti/contatti.component';
         ExamplesComponent,
         ProfileComponent,
         ChisiamoComponent,
-        ContattiComponent
+        ContattiComponent,
+        PodcastComponent
     ]
 })
 export class ExamplesModule { }
