@@ -1,27 +1,35 @@
-/* Stile per il contenitore video */
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 ratio (9/16 = 0.5625) */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
-    width: 100%; /* Assicura che occupi tutta la larghezza del genitore */
-    background-color: black; /* Aggiungi un background nel caso in cui il video non venga caricato */
-  }
-  
-  .video-wrapper iframe {
+    width: 100%;
+    background-color: black;
+}
+
+.video-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-  }
-  
-  /* Media query per schermi piccoli */
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .video-container {
-      flex: 0 0 100%; /* I video occupano il 100% della larghezza su schermi piccoli */
+        flex: 0 0 100%;
+        margin-bottom: 20px;
     }
-  }
+
+    .video-wrapper iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .video-wrapper {
+        padding-bottom: 56.25%;
+    }
+}
 
 .footer .container {
     display: flex;
