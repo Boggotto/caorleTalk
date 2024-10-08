@@ -13,6 +13,7 @@ import { ExamplesComponent } from './examples.component';
 import { ChisiamoComponent } from './chisiamo/chisiamo.component';
 import { ContattiComponent } from './contatti/contatti.component';
 import { PodcastComponent } from './podcast/podcast.component';
+import { SafeUrlPipe } from './pipe';
 
 @NgModule({
     imports: [
@@ -33,7 +34,8 @@ import { PodcastComponent } from './podcast/podcast.component';
         ProfileComponent,
         ChisiamoComponent,
         ContattiComponent,
-        PodcastComponent
+        PodcastComponent,
+        SafeUrlPipe
     ]
 })
 export class ExamplesModule { }

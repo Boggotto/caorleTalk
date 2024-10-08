@@ -33,91 +33,34 @@
                     <h2 class="title">Tutti i Podcast disponibili</h2>
                 </div>
             </div>
+
             <div class="separator separator-primary"></div>
 
-            <div class="container" style="display: inline-flex;justify-content: space-evenly;">
-                <!-- PRIMO VIDEO -->
-                <div class="border rounded-5" style="margin-right: 20px;">
+            <!-- VIDEO -->
+            <div class="video-row" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <div *ngFor="let video of VideosYoutubeList" class="video-container" style="flex: 0 0 calc(50% - 10px); margin-bottom: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+              
+                  <div class="border rounded-5" style="flex-grow: 1;">
                     <section class="p-4 text-center w-100">
-                        <div>
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/GGgtTu5XRNo?si=2z-XJY120UsLGmHB"
+                      <div>
+                        <iframe width="100%" height="315"
+                                [src]="video.link | safeUrl"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
+                      </div>
                     </section>
-
-                    <div class="p-4 text-center border-top mobile-hidden">
-                        <h1 class="title" style="font-size: 1.5em;margin-bottom: 0;">Vivere con Sostenibilità con Irene Zambusi - Vita, esperienze e Plastic Free</h1>
+              
+                    <div class="p-4 text-center border-top mobile-hidden title-container">
+                      <h1 class="title" style="font-size: 1.5em; margin-bottom: 0;">{{ video.titolo }}</h1>
                     </div>
-
+              
+                  </div>
+              
                 </div>
+              </div>
 
-                <!-- SECONDO VIDEO -->
-                <div class="border rounded-5">
-                    <section class="p-4 text-center w-100">
-                        <div>
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/HHNg9Y1er0U?si=1EqRz4MrBAjXOLcZ"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </section>
-
-                    <div class="p-4 text-center border-top mobile-hidden">
-                        <h1 class="title" style="font-size: 1.5em;margin-bottom: 0;">La Forza della Dedizione con Angelo Ferrillo - Radici, Esperienze e Allenamento</h1>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="container" style="display: inline-flex;justify-content: space-evenly;margin-top: 20px;">
-                <!-- PRIMO VIDEO -->
-                <div class="border rounded-5" style="margin-right: 20px;">
-                    <section class="p-4 text-center w-100">
-                        <div>
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/nN-xGpSVZUY?si=IBG9d_4hEWpgWQ_l"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </section>
-
-                    <div class="p-4 text-center border-top mobile-hidden">
-                        <h1 class="title" style="font-size: 1.5em;margin-bottom: 0;">Credere nei Sogni con Giulia Uliari - Mettersi in gioco per realizzarsi</h1>
-                    </div>
-
-                </div>
-
-                <!-- SECONDO VIDEO -->
-                <div class="border rounded-5">
-                    <section class="p-4 text-center w-100">
-                        <div>
-                            <iframe frameborder="0" scrolling="no" width="100%" height="100%" width="560" height="315"
-                                src="assets/img/comingsoon.jpg" name="imgbox" id="imgbox">
-                            </iframe>
-                            <!--
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/GGgtTu5XRNo?si=2z-XJY120UsLGmHB"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            -->
-                        </div>
-                    </section>
-
-                    <div class="p-4 text-center border-top mobile-hidden">
-                        <h1 class="title" style="font-size: 1.5em;margin-bottom: 0;">Coming Soon</h1>
-                    </div>
-
-                </div>
-            </div>
-
-
-
+              <div class="separator separator-primary"></div>
 
         </div>
     </div>
